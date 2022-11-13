@@ -36,8 +36,14 @@
 
 ?>
 
-<?php
-	
+<?php 
+   include_once("lang/main.php");
+   include("library/layout.php");
+    // print HTML prologue
+    $title = t('Intro','acctmain.php');
+    $help = t('helpPage','acctmain');
+    print_html_prologue($title, $langCode);
+
 	include("menu-accounting.php");
 	
 ?>
